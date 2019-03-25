@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class SetLightIntensity : MonoBehaviour
 {
-    private Light localLight;
+    public Light light;
 
     void Setup()
     {
-        localLight = GetComponent<Light>();
+        light = GetComponent<Light>();
     }
 
     public void SetLightintensity(float intensity)
     {
-        localLight.intensity = intensity;
+        light.intensity = intensity;
     }
 
 }

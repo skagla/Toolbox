@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SetMaterialColor : MonoBehaviour
 {
-    private  Renderer render;
+    public  Renderer render;
 
     void Setup()
     {
@@ -27,9 +27,8 @@ public class SetMaterialColor : MonoBehaviour
 
     public void SetMaterialColorB(float b)
     {
-        Color materialColor = render.material.color;
-        materialColor.b = b;
-        render.material.color = materialColor;
+        render.material.shader = Shader.Find("_Color");
+        render.material.SetColor("_Color", Color.green);
     }
 
     public void SetMaterialColorAlpha(float a)

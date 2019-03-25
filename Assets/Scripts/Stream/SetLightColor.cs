@@ -4,39 +4,39 @@ using UnityEngine;
 
 public class SetLightColor : MonoBehaviour
 {
-    private Light localLight;
+    public Light light;
 
     void Setup()
     {
-        localLight = GetComponent<Light>();
+        light = GetComponent<Light>();
     }
 
     public void SetLightColorR(float r)
     {
-        Color lightColor = localLight.color;
+        Color lightColor = light.color;
         lightColor.r = r;
-        localLight.color = lightColor;
+        light.color = lightColor;
     }
 
     public void SetLightColorG(float g)
     {
-        Color lightColor = localLight.color;
+        Color lightColor = light.color;
         lightColor.g = g;
-        localLight.color = lightColor;
+        light.color = lightColor;
     }
 
     public void SetLightColorB(float b)
     {
-        Color lightColor = localLight.color;
+        Color lightColor = light.color;
         lightColor.b = b;
-        localLight.color = lightColor;
+        light.color = lightColor;
     }
 
     public void SetLightColorAlpha(float a)
     {
-        Color lightColor = localLight.color;
+        Color lightColor = light.color;
         lightColor.a = a;
-        localLight.color = lightColor;
+        light.color = lightColor;
     }
 
 }

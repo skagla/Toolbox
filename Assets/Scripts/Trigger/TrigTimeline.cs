@@ -6,7 +6,7 @@ using UnityEngine.Timeline;
 
 public class TrigTimeline : MonoBehaviour
 {
-    public bool trig = false;
+
     PlayableDirector playableDirector;
 
     // Start is called before the first frame update
@@ -15,14 +15,7 @@ public class TrigTimeline : MonoBehaviour
         playableDirector = GetComponent<PlayableDirector>();
         
     }
-    private void Update()
-    {
-        if (trig)
-        {
-            trig = false;
-            TriggerTimeline();
-        }
-    }
+  
 
     public void TriggerTimeline()
     {

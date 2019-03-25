@@ -11,13 +11,13 @@ public class OscReceiverSwitch : MonoBehaviour
 
     public float inputValue;
     private float oldInput;
-
+    public bool triggerd = false;
     [System.Serializable]
     public class FloatEvent : UnityEvent<float> { }
     public FloatEvent onEvent;
     public FloatEvent offEvent;
 
-    public bool triggerd = false;
+   
 
     // Start is called before the first frame update
     void Start()
